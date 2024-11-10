@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Personal Details</h2>
+    <form id="personalDetailsForm">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" id="age" required>
+        </div>
+        <div class="form-group">
+            <label for="gender">Gender:</label>
+            <input type="text" id="gender" placeholder="Type to select..." onfocus="showGenderOptions()" autocomplete="off" required>
+            <div id="genderOptions" class="options" style="display: none;">
+                <div onclick="selectGender('Female')">Female</div>
+                <div onclick="selectGender('Male')">Male</div>
+                <div onclick="selectGender('Transgender')">Transgender</div>
+                <div onclick="selectGender('Prefer not to say')">Prefer not to say</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required>
+        </div>
+        <div class="form-group">
+            <label for="altPhone">Alternative Phone Number (optional):</label>
+            <input type="tel" id="altPhone">
+        </div>
+        <div class="form-group">
+            <label for="address">Residential Address:</label>
+            <input type="text" id="address" required>
+        </div>
+        <div class="form-group">
+            <label for="policeStation">Nearby Police Station Name:</label>
+            <input type="text" id="policeStation" required>
+        </div>
+        <div class="form-group">
+            <label for="places">Places Visiting Often:</label>
+            <input type="text" id="place1" placeholder="Place 1" required>
+            <input type="text" id="place2" placeholder="Place 2 (optional)">
+            <input type="text" id="place3" placeholder="Place 3 (optional)">
+            <input type="text" id="place4" placeholder="Place 4 (optional)">
+            <input type="text" id="place5" placeholder="Place 5 (optional)">
+        </div>
+        <h3>Emergency Contacts</h3>
+        <div class="form-group">
+            <label for="contact1Name">Name 1:</label>
+            <input type="text" id="contact1Name" required>
+            <label for="contact1Phone">Phone Number 1:</label>
+            <input type="tel" id="contact1Phone" required>
+        </div>
+        <div class="form-group">
+            <label for="contact2Name">Name 2:</label>
+            <input type="text" id="contact2Name">
+            <label for="contact2Phone">Phone Number 2:</label>
+            <input type="tel" id="contact2Phone">
+        </div>
+        <div class="form-group">
+            <label for="contact3Name">Name 3:</label>
+            <input type="text" id="contact3Name">
+            <label for="contact3Phone">Phone Number 3:</label>
+            <input type="tel" id="contact3Phone">
+        </div>
+        <div class="form-group">
+            <label for="contact4Name">Name 4:</label>
+            <input type="text" id="contact4Name">
+            <label for="contact4Phone">Phone Number 4:</label>
+            <input type="tel" id="contact4Phone">
+        </div>
+        <div class="form-group">
+            <label for="contact5Name">Name 5:</label>
+            <input type="text" id="contact5Name">
+            <label for="contact5Phone">Phone Number 5:</label>
+            <input type="tel" id="contact5Phone">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
